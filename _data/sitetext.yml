@@ -114,15 +114,15 @@ en: &DEFAULT_EN
 
       - name: "Johnathen Kammer"
         role: "Vice President"
-        image: 
+        image: assets\img\team\John L. 640x640.jpg
 
       - name: "Alberto Bello"
         role: "Treasurer"
-        image: 
+        image: assets\img\team\John L. 640x640.jpg
 
       - name: "Rafael Reyas"
         role: "Secretary"
-        image: 
+        image: assets\img\team\John L. 640x640.jpg
 
       - name: "Alexandru Iftinca"
         role: "Project Director"
