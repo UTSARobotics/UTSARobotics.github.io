@@ -2,7 +2,7 @@
 caption:
   title: API
   subtitle:
-  thumbnail: assets\img\workshop\F22 PCB Design banner.png
+  thumbnail: assets\img\workshop\SMDWorkshop.jpg
 
 
 title: 3D Printing
