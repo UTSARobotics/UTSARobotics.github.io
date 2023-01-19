@@ -1,5 +1,5 @@
 caption:
-  title: 3D Printing
+  title: API
   subtitle:
   thumbnail: assets\img\workshop\F22 PCB Design banner.png
 ---
