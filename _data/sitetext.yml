@@ -114,11 +114,11 @@ en: &DEFAULT_EN
 
       - name: "Johnathen Kammer"
         role: "Vice President"
-        image: "assets\img\team\Alberto.webp"
+        image: 
 
       - name: "Alberto Bello"
         role: "Treasurer"
-        image: 
+        image: assets\img\team\Alex I. 640x640.jpg
 
       - name: "Rafael Reyas"
         role: "Secretary"
