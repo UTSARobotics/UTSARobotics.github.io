@@ -152,6 +152,8 @@ en: &DEFAULT_EN
         icon: "fab fa-github"
       - url: https://www.instagram.com/ras_utsa/
         icon: "fab fa-instagram"
+      - url: https://groupme.com/join_group/85018700/w9j4oY48
+        icon: "fa-solid fa-hashtag"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
