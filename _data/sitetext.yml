@@ -114,7 +114,7 @@ en: &DEFAULT_EN
 
       - name: "Alberto Bello"
         role: "Vice President"
-        image: 
+        image: "assets\img\team\Alberto.webp"
 
       - name: "Jeffry Rodarte"
         role: "Treasurer"
