@@ -154,6 +154,12 @@ p.large {
 	font-size: 16px;
 	margin-bottom: 50px;
 }
+
+p.large-mission-statement {
+  font-size: 20px;
+  margin-bottom: 300px;
+}
+
 .centered {
 	text-align: center;
 }
