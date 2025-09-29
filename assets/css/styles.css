@@ -88,6 +88,12 @@ width: 100%;
 display: table-cell;
 vertical-align: middle;
 }
+.block-vertical {
+  display: block;
+  vertical-align: middle;
+  margin-bottom: -50px;
+}
+
 .text-center {
 text-align: center}
 
@@ -155,9 +161,12 @@ p.large {
 	margin-bottom: 50px;
 }
 
+p.large-text {
+  font-size: 40px;
+}
 p.large-mission-statement {
   font-size: 20px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 .centered {
