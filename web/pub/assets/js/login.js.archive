@@ -1,0 +1,57 @@
+// TODO: Handle server response and redirect using login cookie
+
+// This is an async function, so it returns a Promise
+async function hashString(str) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(str);
+    const hashBuffer = await window.crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
+
+// 1. Select the <form> element, not the button, for a 'submit' event
+const loginForm = document.getElementById("login-form"); 
+
+// 2. Make the event listener's callback function 'async'
+loginForm.addEventListener("submit", async (event) => { 
+    // 3. Always prevent the form's default page-reload behavior
+    event.preventDefault();
+    
+    console.log("login-clicked")
+  
+    // 4. Get the .value from the input elements
+    const emailValue = document.getElementById("form-email").value;
+    const passwordValue = document.getElementById("form-password").value;
+  
+    // 5. 'await' the result of hashString to get the actual hash
+    const hashedPassword = await hashString(passwordValue);
+
+    const loginData = {
+      email: emailValue,
+      password: hashedPassword
+    };
+
+    // 6. Now 'await' is valid here because the function is async
+    try {
+        const response = await fetch("/login", {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(loginData)
+        });
+        
+        // Handle the response from the server
+        const result = await response.json();
+        if(response.ok) {
+            console.log("Login successful:", result);
+            // Redirect or update UI here
+        } else {
+            console.error("Login failed:", result);
+        }
+
+    } catch (error) {
+        console.error("An error occurred:", error);
+    }
+});
