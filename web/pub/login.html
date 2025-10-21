@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAS login</title>
+    <link rel="stylesheet" href="assets/css/login-screen.css">
+    <link href="assets/img/RAS-LOGO.png" rel="icon">
+    <link href="assets/img/RAS-LOGO.png" rel="apple-touch-icon">
+</head>
+<body>
+    <div class="creative-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <div class="login-card">
+            <div class="card-decoration">
+                <div class="deco-line line-1"></div>
+                <div class="deco-line line-2"></div>
+                <div class="deco-line line-3"></div>
+            </div>
+            
+            <div class="login-header">
+                <div class="ras-logo">
+                    <div class="col-md-6"> <img class="img-responsive rounded-logo" src="assets/img/RAS-LOGO.png" align="", style="width: 75px; min-width: 75px;"> </div>
+                <!--<div class="logo-circle circle-1"></div>  
+                    <div class="logo-circle circle-2"></div>
+                    <div class="logo-circle circle-3"></div> -->
+                </div>
+                <h2>RAS Portal</h2>
+                <p>Portal Description (WIP)</p>
+            </div>
+            
+            <form class="login-form" id="loginForm" novalidate>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <div class="input-decoration"></div>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email">Email Address</label>
+                        <div class="input-waves">
+                            <div class="wave wave-1"></div>
+                            <div class="wave wave-2"></div>
+                            <div class="wave wave-3"></div>
+                        </div>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper password-wrapper">
+                        <div class="input-decoration"></div>
+                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                        <label for="password">Password</label>
+                        <button type="button" class="password-toggle" id="passwordToggle" aria-label="Toggle password visibility">
+                            <span class="toggle-icon"></span>
+                        </button>
+                        <div class="input-waves">
+                            <div class="wave wave-1"></div>
+                            <div class="wave wave-2"></div>
+                            <div class="wave wave-3"></div>
+                        </div>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-options">
+                    <div class="remember-wrapper">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember" class="checkbox-label">
+                            <div class="checkbox-creative">
+                                <div class="check-mark"></div>
+                            </div>
+                            Stay signed in
+                        </label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <span class="btn-bg"></span>
+                    <span class="btn-text">Log in</span>
+                    <span class="btn-loader">
+                        <div class="loader-dot dot-1"></div>
+                        <div class="loader-dot dot-2"></div>
+                        <div class="loader-dot dot-3"></div>
+                    </span>
+                </button>
+            </form>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span>or explore with</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <div class="creative-social">
+                <button type="button" class="social-btn behance-btn">
+                    <div class="social-icon behance-icon"></div>
+                    <span>Behance</span>
+                </button>
+                <button type="button" class="social-btn dribbble-btn">
+                    <div class="social-icon dribbble-icon"></div>
+                    <span>Dribbble</span>
+                </button>
+            </div>
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#">Sign-up here!</a></p>
+            </div>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-animation">
+                    <div class="success-circle"></div>
+                    <div class="success-checkmark">✓</div>
+                </div>
+          <h3>Welcome to RAS!</h3>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/form-utils.js"></script>
+    <script src="assets/js/login-scripts.js"></script>
+</body>
+</html>

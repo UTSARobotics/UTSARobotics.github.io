@@ -143,6 +143,11 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 200;
 	color: #ffffff;
 }
+
+h1.tittle {
+  color: #3a0940;
+}
+
 h2 {
 	font-size: 36px;
 	color: #FFFFFF;
@@ -482,9 +487,6 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	color: #ffbf00;
 } 
 
-.white h1 {
-	color: #999;
-}
 .white p {
 	padding-top: 15px;
 } 
