@@ -674,4 +674,8 @@ img.rounded-logo {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
+#borderimg {
+  border: 10px solid transparent; /* Required for border-image */
+  padding: 0px;
+  border-image: url(../img/imgBorder.png) 30 round;
+}
