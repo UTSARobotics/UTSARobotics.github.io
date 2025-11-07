@@ -63,7 +63,7 @@ background:transparent;
 .navbar-inverse {
 background-color: #0E1113; /* background-color */
 border-color: #0E1113 ;
-padding: 20px 0;
+padding: 5px 0px;
 }
 .navbar-inverse .navbar-nav > li > a {
 color: #ffffff; /* text*/
@@ -642,11 +642,36 @@ margin-top:30px;
 }
 
 img.rounded-logo {
-  width: px; /* Or any desired square dimension */
+  width: 75px; /* Or any desired square dimension */
   height: 75px;
   border-radius: 50%;
   object-fit: cover; /* Ensures the image content fills the circular shape without distortion */
 }
 .scaled-element {
-    transform: scale(0.65); /* Scales the element to 150% of its original size */
+    transform: scale(0.65); /* Scales the element to 65% of its original size */
 }
+
+
+/* Vertically center navbar content */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Center the nav links vertically */
+.navbar .navbar-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Make sure the nav items don't stretch oddly */
+.navbar .navbar-nav > li > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
