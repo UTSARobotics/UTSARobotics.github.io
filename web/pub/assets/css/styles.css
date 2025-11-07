@@ -18,7 +18,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	margin: 3em 0;
+	margin: 1em 0;
 	padding: 0;
 	background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
 	background-image: -moz-linear-gradient(left, #fff, #ccc, #fff);
@@ -639,4 +639,14 @@ margin: 10px auto;
 #team img{
 margin-top:30px;
 }
+}
+
+img.rounded-logo {
+  width: px; /* Or any desired square dimension */
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image content fills the circular shape without distortion */
+}
+.scaled-element {
+    transform: scale(0.65); /* Scales the element to 150% of its original size */
 }
