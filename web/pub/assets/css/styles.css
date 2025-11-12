@@ -54,8 +54,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 .logo a {
-margin: 0 auto; 
-display: inline-block; 
+margin: 0 0; 
+display: inline-block;
 } 
 .logo a img{
 background:transparent;
@@ -648,7 +648,7 @@ img.rounded-logo {
   object-fit: cover; /* Ensures the image content fills the circular shape without distortion */
 }
 .scaled-element {
-    transform: scale(0.65); /* Scales the element to 65% of its original size */
+    transform: scale(0.55); /* Scales the element to 65% of its original size */
 }
 
 
@@ -678,4 +678,7 @@ img.rounded-logo {
   border: 10px solid transparent; /* Required for border-image */
   padding: 0px;
   border-image: url(../img/imgBorder.png) 30 round;
+}
+#iconMargin {
+  margin-right: -15px;
 }
