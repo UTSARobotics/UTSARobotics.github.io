@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600);
 @import url(http://fonts.googleapis.com/css?family=Raleway:600,700,800);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@500;700&display=swap');
 html, button, input, select, textarea {
 	color: #222;
 }
@@ -51,7 +52,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 	line-height: 1.4;
-	font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+@media screen and (max-width: 768px) {
+    .hide-on-mobile {
+        display: none !important; /* !important ensures it overrides other styles */
+    }
 }
 .logo a {
 margin: 0 0; 
@@ -62,8 +68,7 @@ background:transparent;
 }
 .navbar-inverse {
 background-color: #0E1113; /* background-color */
-border-color: #0E1113 ;
-padding: 5px 0px;
+border: none ;
 }
 .navbar-inverse .navbar-nav > li > a {
 color: #ffffff; /* text*/
@@ -131,6 +136,9 @@ text-align: center}
 	background-color: #16a085;
 	color: white;
 }
+
+
+
 a img {
 	background: transparent;
 }
@@ -139,7 +147,7 @@ a img {
 }
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Raleway";
+  font-family: 'Montserrat', sans-serif;
 	font-weight: 200;
 	color: #ffffff;
 }
@@ -253,7 +261,24 @@ a:before, a:after {
   margin-top: -50px;
   text-align: center;
   background-position: center center;
-  min-height: 850px;
+  min-height: 1000px;
+  width: 100%;
+
+  /* background sizing */
+  background-size: cover;
+
+  /* flexbox positioning */
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: flex-end;     /* stick content at bottom */
+  padding-bottom: 100px;     /* keep some space from bottom */
+}
+#headerwrap-urc {
+  background: url(../img/rover.webp) no-repeat center top;
+  margin-bottom: 0px;
+  text-align: center;
+  background-position: center top;
+  min-height: 800px;
   width: 100%;
 
   /* background sizing */
@@ -654,27 +679,93 @@ img.rounded-logo {
 
 /* Vertically center navbar content */
 .navbar .container {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0px 200px 0px 200px;
+}
+
+.navbar .container-fluid {
+  position: relative;
 }
 
 /* Center the nav links vertically */
 .navbar .navbar-collapse {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-/* Make sure the nav items don't stretch oddly */
 .navbar .navbar-nav > li > a {
   display: flex;
   align-items: center;
   height: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
+
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 767px) {
+  .navbar-center {
+    position: static;
+    transform: none;
+  }
+}
+
+.navbar-social > li > a {
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 18px;
+}
+
+/* Navbar SVG icons */
+.navbar-social .nav-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* makes SVG white */
+  transition: transform 0.2s ease, filter 0s ease;
+}
+
+.navbar-social a:hover .nav-icon {
+  transform: scale(1.15);
+  filter: brightness(0)
+        invert(27%)
+        sepia(76%)
+        saturate(2482%)
+        hue-rotate(276deg)
+        brightness(92%)
+        contrast(94%);
+}
+/* Make social icons horizontal */
+.navbar-social {
+  display: flex;
+  align-items: center;   /* vertically center them */
+  margin: 0;
+  padding-left: 15px;    /* space from brand */
+}
+
+.navbar-social li {
+  list-style: none;
+  margin-right: 12px;    /* space between icons */
+}
+
+.navbar-social li:last-child {
+  margin-right: 0;
+}
+
+/* Icon sizing */
+.nav-icon {
+  height: 20px;
+  width: auto;
+}
+
+.navbar-login > li > a {
+  padding-left: 25px;
+  font-weight: 600;
+}
+
+
+
 #borderimg {
   border: 10px solid transparent; /* Required for border-image */
   padding: 0px;
@@ -683,3 +774,205 @@ img.rounded-logo {
 #iconMargin {
   margin-right: -15px;
 }
+
+
+
+.urc-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.section-header .lead {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.section-divider {
+  width: 60px;
+  height: 4px;
+  background: #59135D; /* UTSA-ish accent */
+  margin: 15px auto 25px;
+  border-radius: 2px;
+}
+
+
+.mission-header {
+  margin-top: 100px;
+}
+
+.mission-cards {
+  margin-top: 40px;
+}
+
+.mission-card {
+  background: #16181a;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.mission-card i {
+  color: #cc0000;
+  margin-bottom: 15px;
+}
+
+.mission-card h4 {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* URC team modules */
+.modules-section {
+  padding: 80px 0;
+  background: #0E1113;
+}
+
+.modules-grid {
+  margin-top: 50px;
+}
+
+.module-card {
+  background: #16181a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.module-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.module-card h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+/* Skills Section */
+.skills-section {
+  background-color: #0E1113;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.skills-grid {
+  margin-top: 40px;
+}
+
+.skill-card {
+  background: #16181a;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.skill-card h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+/* Location Section */
+.location-section {
+  padding: 80px 0;
+  background: #0E1113;
+}
+
+.location-content {
+  padding-left: 40px;
+  margin-top: 60px;  /* pushes text down*/
+}
+
+.location-content h2 {
+  margin-top: 0;
+}
+
+.location-image {
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.lead {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+/* URC Meet the leads*/
+.team-section {
+  padding: 80px 0;
+  background: #16181a;
+}
+
+.team-grid {
+  margin-top: 50px;
+}
+
+.team-card {
+  text-align: center;
+  background: #16181a;
+  padding: 25px;
+  border-radius: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  /*transition: transform 0.3s ease, box-shadow 0.3s ease;*/ 
+  margin-bottom: 30px;
+}
+
+.team-card:hover {
+  /*transform: translateY(-6px);*/
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.team-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+.team-role {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.team-desc {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+
+
+
+
+

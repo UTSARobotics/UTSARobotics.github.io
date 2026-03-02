@@ -29,40 +29,100 @@
 
 </head>
 <body data-target="#navbar-main">
-<div id="navbar-main"> 
-  <!-- Fixed navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-	    <div class="pull-left logo">
-        <a class="" href="https://linktr.ee/utsa_ras", style="margin: 0px -10px 0px -10px"><img class="rounded-logo scaled-element" src="assets/img/linkTreeIconLogo.webp" align="", style="width: 80px; min-width: 30px;" /> </a>
-        <a class="" href="https://discord.gg/d6kDUec3XC", style="margin: 0px -10px 0px -10px"><img class="rounded-logo scaled-element" src="assets/img/discordLogoIcon.jpg" align="", style="width: 80px; min-width: 30px;" /> </a>
-        <a class="" href="https://www.instagram.com/ras_utsa/", style="margin: 0px -10px 0px -10px"><img class="rounded-logo scaled-element" src="assets/img/instagramLogoIcon.webp", style="width:80px; min-width: 30px;" /></a>
-        <a class="" href="https://github.com/UTSARobotics", style="margin: 0px 50px 0px -10px"><img class="rounded-logo scaled-element" src="assets/img/githubLogoIcon.png" align="", style="width: 80px; min-width: 30px;" /> </a>
-       </div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav pull-right">
-          <li> <a href="#home-section" style="marign-left: 20px;"class="smoothScroll">Home</a></li>
-          <li> <a href="#services" class="smoothScroll">Projects</a></li>		  
-          <li> <a href="#about" class="smoothScroll">About RAS</a></li>
-          <li> <a href="#portfolio" class="smoothScroll">Events</a></li>
-          <li> <a href="#team" class="smoothScroll">Officers</a></li>
-          <li> <a href="#contact" class="smoothScroll">Contact</a></li>
-          <li> <a href="login.html" class="smoothScroll", style="margin-left: 200px">Login</a></li>
-        </ul>
-      </div>
-      <!--/.nav-collapse --> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- LEFT SIDE -->
+    <div class="navbar-header">
+      <button type="button" 
+              class="navbar-toggle" 
+              data-toggle="collapse" 
+              data-target="#main-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">UTSA Robotics</a>
+    </div>
+
+    
+
+      <ul class="nav navbar-nav navbar-left navbar-social">
+
+        <li>
+          <a href="https://linktr.ee/utsa_ras" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/linktree.svg"
+                 class="nav-icon"
+                 alt="Linktree">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.instagram.com/ras_utsa/" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/instagram.svg"
+                 class="nav-icon"
+                 alt="Instagram">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.linkedin.com/in/ras-utsa/" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/linkedin.svg"
+                 class="nav-icon"
+                 alt="Linkedin">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.youtube.com/@ieeeutsaras" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/youtube.svg"
+                 class="nav-icon"
+                 alt="YouTube">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://discord.gg/d6kDUec3XC" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/discord.svg"
+                 class="nav-icon"
+                 alt="Discord">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://github.com/UTSARobotics" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/github.svg"
+                 class="nav-icon"
+                 alt="GitHub">
+          </a>
+        </li>
+      
+      </ul>
+    <!-- COLLAPSIBLE thingy -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="urc.html">URC</a></li>
+        <li><a href="officers.html">Officers</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- Login (FAR RIGHT) -->
+      <ul class="nav navbar-nav navbar-right navbar-login">
+        <li><a href="login.html"><strong>Login</strong></a></li>
+      </ul>
+
     </div>
   </div>
-</div>
+</nav>
 
 <!-- ==== HEADERWRAP ==== -->
 <div id="home-section">
   <div id="headerwrap" name="home">
     <header class="clearfix tb"> 
-      <div class="block-vertical text-center">
+      <div class="block-vertical text-center hide-on-mobile">
         <h1>Robotics & Automation Society</h1>
         <p>Innovating the Future of Robotics & Automation</p>
       </div>
@@ -99,8 +159,7 @@
       </div>
       <div class="col-lg-4 callout"> <i class="fa fa-graduation-cap fa-3x"></i>
         <h3>Crashcourses</h3>
-        <p>Robotics Crashcourses are bite-sized, 3-part learning modules designed to simplify complex robotics topics, breaking them down into practical lessons that make advanced concepts easier to understand and apply</p>
-      </div>
+        <p>Robotics Crashcourses are bite-sized, 3-part learning modules designed to simplify complex robotics topics, breaking them down into practical lessons that make advanced concepts easier to understand and apply</p> </div>
       <div class="col-lg-4 callout"> <i class="fa fa-cogs fa-3x"></i>
         <h3>URC</h3>
         <p>Our University Rover Challenge team is developing an advanced rover with autonomous navigation, robotic manipulation, drone integration, and automated soil testing to push the frontiers of planetary exploration.</p>

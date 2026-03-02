@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="UTSA Robotics">
+<title>UTSA Robotics</title>
+<link href="assets/img/RAS-LOGO.png" rel="icon">
+<link href="assets/img/RAS-LOGO.png" rel="apple-touch-icon">
+<!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="assets/css/styles.css" rel="stylesheet">
+<link href="assets/css/animate-custom.css" rel="stylesheet"> 
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries --> 
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body data-target="#navbar-main">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- LEFT SIDE -->
+    <div class="navbar-header">
+      <button type="button" 
+              class="navbar-toggle" 
+              data-toggle="collapse" 
+              data-target="#main-navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">UTSA Robotics</a>
+    </div>
+
+    
+
+      <ul class="nav navbar-nav navbar-left navbar-social">
+
+        <li>
+          <a href="https://linktr.ee/utsa_ras" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/linktree.svg"
+                 class="nav-icon"
+                 alt="Linktree">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.instagram.com/ras_utsa/" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/instagram.svg"
+                 class="nav-icon"
+                 alt="Instagram">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.linkedin.com/in/ras-utsa/" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/linkedin.svg"
+                 class="nav-icon"
+                 alt="Linkedin">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://www.youtube.com/@ieeeutsaras" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/youtube.svg"
+                 class="nav-icon"
+                 alt="YouTube">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://discord.gg/d6kDUec3XC" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/discord.svg"
+                 class="nav-icon"
+                 alt="Discord">
+          </a>
+        </li>
+      
+        <li>
+          <a href="https://github.com/UTSARobotics" target="_blank">
+            <img src="assets/fontawesome-free-7.2.0-web/svgs-full/brands/github.svg"
+                 class="nav-icon"
+                 alt="GitHub">
+          </a>
+        </li>
+      
+      </ul>
+    <!-- COLLAPSIBLE thingy -->
+    <div class="collapse navbar-collapse" id="main-navbar">
+
+      <ul class="nav navbar-nav navbar-center">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="urc.html">URC</a></li>
+        <li><a href="officers.html">Officers</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- Login (FAR RIGHT) -->
+      <ul class="nav navbar-nav navbar-right navbar-login">
+        <li><a href="login.html"><strong>Login</strong></a></li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- HEADERWRAP -->
+<div id="home-section">
+  <div id="headerwrap-urc" name="home">
+    <header class="clearfix tb"> 
+      <div class="block-vertical text-center">
+        <h1>University Rover Challenge</h1>
+      </div>
+    </header>
+  </div>
+</div>
+<!-- /headerwrap --> 
+
+
+
+<!-- SERVICES (ill change the name for this ID later) -->
+<section id="services" class="urc-section">
+  <div class="container">
+    
+    <div class="text-center section-header">
+      <h2>Challenge Description</h2>
+      <hr>
+
+      <p class="lead">
+        The University Rover Challenge (URC) challenges university teams to design 
+        and build next-generation Mars rovers capable of assisting astronauts 
+        working on the surface of Mars.
+      </p>
+    </div>
+
+    <!-- Missions Section -->
+    <div class="text-center mission-header">
+      <h3>Competition Missions</h3>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="row mission-cards">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="mission-card">
+          <i class="fa fa-cogs fa-3x"></i>
+          <h4>Equipment Servicing</h4>
+          <p>
+            Perform dexterous operations on a mock lander using a precision robotic arm.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="mission-card">
+          <i class="fa fa-truck fa-3x"></i>
+          <h4>Delivery Mission</h4>
+          <p>
+            Deliver tools and equipment to astronauts across rugged terrain 
+            while navigating obstacles.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="mission-card">
+          <i class="fa fa-location-arrow fa-3x"></i>
+          <h4>Autonomous Navigation</h4>
+          <p>
+            Autonomously navigate to designated waypoints and identify objects. 
+            An aerial drone may assist but is not required.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="mission-card">
+          <i class="fa fa-flask fa-3x"></i>
+          <h4>Science Mission</h4>
+          <p>
+            Analyze soil samples and investigate a site for potential signs of life.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Different team modules section -->
+<section id="modules" class="modules-section">
+  <div class="container">
+
+    <div class="text-center">
+      <h2>URC Team Modules</h2>
+      <hr>
+      <p class="lead">
+        Our URC team is organized into specialized modules that focus on different aspects of rover design and development.
+      </p>
+    </div>
+
+    <div class="row modules-grid">
+
+      <!-- Arm Module -->
+      <div class="col-md-3 col-sm-6">
+        <div class="module-card">
+          <h4>Arm Module</h4>
+          <p>
+            Designs and builds the robotic arm for precision tasks. 
+            Focuses on kinematics, control algorithms, and end-effector design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rover Module -->
+      <div class="col-md-3 col-sm-6">
+        <div class="module-card">
+          <h4>Rover Module</h4>
+          <p>
+            Responsible for the overall rover design, including chassis, 
+            suspension, and mobility systems. Ensures the rover can traverse 
+            the challenging terrain of the competition site.
+          </p>
+        </div>
+      </div>
+
+      <!-- Autonomy Module -->
+      <div class="col-md-3 col-sm-6">
+        <div class="module-card">
+          <h4>Autonomy Module</h4>
+          <p>
+            Develops the software for autonomous navigation and mission execution. 
+            Implements algorithms for path planning, obstacle avoidance, and 
+            computer vision to enable the rover to operate independently.
+          </p>
+        </div>
+      </div>
+
+      <!-- Science Module -->
+      <div class="col-md-3 col-sm-6">
+        <div class="module-card">
+          <h4>Science Module</h4>
+          <p>
+            Designs and implements scientific instruments for soil analysis and 
+            life detection. Develops experiments to be conducted on the Martian 
+            surface and analyzes data collected during the competition.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- What Skills are developed? -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <div class="text-center">
+      <h2>Skills Used & Developed</h2>
+      <hr>
+      <p class="lead">
+        URC challenges students to apply real-world engineering skills across multiple disciplines.
+      </p>
+    </div>
+
+    <div class="row skills-grid">
+
+      <!-- Mechanical -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card">
+          <h4>Mechanical Engineering</h4>
+          <ul>
+            <li>CAD Design (SolidWorks / Fusion / Onshape)</li>
+            <li>Structural Analysis</li>
+            <li>Manufacturing & Prototyping</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Electrical -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card">
+          <h4>Electrical Engineering</h4>
+          <ul>
+            <li>PCB Design</li>
+            <li>Power Distribution Systems</li>
+            <li>Embedded Systems</li>
+            <li>Sensor Integration</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Software -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card">
+          <h4>Software Engineering</h4>
+          <ul>
+            <li>ROS Development</li>
+            <li>Autonomous Navigation</li>
+            <li>Computer Vision</li>
+            <li>Control Systems</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Biomedical -->
+      <div class="col-md-6 col-lg-3">
+        <div class="skill-card">
+          <h4>Biomedical Engineering</h4>
+          <ul>
+            <li>Soil & Sample Analysis</li>
+            <li>Life Detection Methods</li>
+            <li>Lab Instrumentation</li>
+            <li>Data Interpretation</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="row skills-grid" style="margin-top: 30px;">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="skill-card">
+          <h4>Professional Development</h4>
+          <ul>
+            <li>Systems Engineering</li>
+            <li>Technical Documentation</li>
+            <li>Team Collaboration</li>
+            <li>Project Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Meet the Leads (changing the name of these ID to 'team-lead' later)-->
+<section id="team" class="team-section">
+  <div class="container">
+
+    <div class="text-center">
+      <h2>Meet the Leads</h2>
+      <hr>
+      <p class="lead">
+        The student leaders driving our University Rover Challenge program.
+      </p>
+    </div>
+
+    <div class="row team-grid">
+
+      <!-- Arm Module Lead -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="assets/img/people/David.png" 
+               alt="Arm Lead" 
+               class="img-responsive team-img">
+          <h4>David Thuc</h4>
+          <p class="team-role">Arm Module Lead</p>
+          <p class="team-desc">
+            Leads the design and development of the robotic arm, including 
+            kinematics, control algorithms, and end-effector design.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rover Module Lead -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="assets/img/people/placeholderGuy.jpg" 
+               alt="Rover Lead" 
+               class="img-responsive team-img">
+          <h4>Matthew</h4>
+          <p class="team-role">Rover Module Lead</p>
+          <p class="team-desc">
+            Leads the overall rover design, including chassis, suspension, and 
+            mobility systems to ensure the rover can traverse the competition terrain.
+          </p>
+        </div>
+      </div>
+
+      <!-- Autonomy Module Lead -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="assets/img/people/Prime-croped.jpg" 
+               alt="Autonomy Lead" 
+               class="img-responsive team-img">
+          <h4>Primitivo Rodriguez III</h4>
+          <p class="team-role">Autonomy Module Lead</p>
+          <p class="team-desc">
+            Leads the development of autonomous navigation systems, including 
+            path planning, obstacle avoidance, and computer vision algorithms.
+          </p>
+        </div>
+      </div>
+
+      <!-- Science Module Lead -->
+      <div class="col-md-3 col-sm-6">
+        <div class="team-card">
+          <img src="assets/img/people/placeholderGuy.jpg" 
+               alt="Science Lead" 
+               class="img-responsive team-img">
+          <h4>Alec Graves</h4>
+          <p class="team-role">Science Module Lead</p>
+          <p class="team-desc">
+            Leads the design and implementation of scientific instruments and 
+            experiments for soil analysis and life detection on Mars.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Where is it? -->
+<section id="about" class="location-section">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <div class="col-md-6">
+        <img class="img-responsive location-image" 
+             src="assets/img/urc/urcMarsResearchStationUtah.jpg" 
+             alt="Mars Desert Research Station">
+      </div>
+
+      <div class="col-md-6 location-content">
+        <h2>Where Does the Competition Take Place?</h2>
+        <div class="section-divider"></div>
+
+        <p class="lead">
+          The University Rover Challenge is held at the Mars Desert Research Station (MDRS) in Utah, USA.
+        </p>
+
+        <p class="lead">
+          MDRS is a simulated Martian environment featuring rugged desert terrain, 
+          rocky outcrops, and geological formations that closely resemble Mars.
+        </p>
+
+        <p class="lead">
+          Teams must navigate this extreme landscape while completing complex mission tasks 
+          under real-world constraints.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Bootstrap core JavaScript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> 
+<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script> 
+<script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+<script type="text/javascript" src="assets/js/custom-scripts.js"></script>
+</body>
+</html>
+
