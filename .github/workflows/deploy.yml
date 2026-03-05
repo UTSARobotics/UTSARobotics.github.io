@@ -1,0 +1,22 @@
+name: Remote Update
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          script: |
+            cd /root/containers/UTSARobotics.github.io
+            git pull origin main
+            # If needed, restart services:
+            cd ..
+            docker compose up -d --force-recreate caddy
