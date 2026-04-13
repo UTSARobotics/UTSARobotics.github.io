@@ -13,7 +13,6 @@ Under the new architecture that this document proposes, all static pages (within
 This architecture requires a new folder structure:
 
 ```
-```
 .
 ├── go.mod
 ├── go.sum
@@ -25,7 +24,6 @@ This architecture requires a new folder structure:
     ├─── static
     ├─── assets
     └─── templates # this folder holds golang html/templates
-```
 ```
 
 [^1]: When it _makes sense_ and does not hinder the development and maintenance of the project.
