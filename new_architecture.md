@@ -26,4 +26,6 @@ This architecture requires a new folder structure:
     └─── templates # this folder holds golang html/templates
 ```
 
+This structure is subject to change before implementation. Changes will be documented.
+
 [^1]: When it _makes sense_ and does not hinder the development and maintenance of the project.
