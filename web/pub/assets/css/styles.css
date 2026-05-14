@@ -291,6 +291,24 @@ a:before, a:after {
   padding-bottom: 100px;     /* keep some space from bottom */
 }
 
+#headerwrap-officer {
+  background: url(../img/people/groupPicture.jpg) no-repeat center top;
+  margin-bottom: 0px;
+  text-align: center;
+  background-position: center top;
+  min-height: 800px;
+  width: 100%;
+
+  /* background sizing */
+  background-size: cover;
+
+  /* flexbox positioning */
+  display: flex;
+  justify-content: center;   /* horizontal center */
+  align-items: flex-end;     /* stick content at bottom */
+  padding-bottom: 100px;     /* keep some space from bottom */
+}
+
 #headerwrap h1 {
   color: #ffffff;
   font-size: 50px;
@@ -378,8 +396,13 @@ background:#fff;
 }
 #team {
 	background: #0E1113;
+	padding: 10px 0;
+}
+#team100 {
+	background: #0E1113;
 	padding: 100px 0;
 }
+
 #team H4 {
 	padding-top: 10px;
 	color: #898989;
